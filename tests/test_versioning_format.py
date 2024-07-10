@@ -1,7 +1,7 @@
 import pytest
 
-from versioner.versioning_format import SemanticVersioning
-from versioner.versioning_format import VPrefixVersioning
+from versioned_classes.versioning_format import SemanticVersioning
+from versioned_classes.versioning_format import VPrefixVersioning
 
 
 @pytest.mark.parametrize(

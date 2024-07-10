@@ -1,5 +1,5 @@
-from versioner.versioned_class import VersionedClass
-from versioner.versioned_class import initial_version
+from versioned_classes.versioned_class import VersionedClass
+from versioned_classes.versioned_class import initial_version
 
 
 def test_create_versioned_calls():

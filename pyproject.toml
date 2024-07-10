@@ -1,5 +1,5 @@
 [project]
-name = "versioner"
+name = "versioned-classes"
 description = "A simple library for managing versioning of classes"
 authors = [
     {name="Declan Atkins", email="declanatkins@gmail.com"},
