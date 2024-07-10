@@ -18,6 +18,9 @@ def test_create_versioned_calls():
     assert Foo.get_version("v2") == Baz
     assert Foo.get_latest_version() == Baz
     assert Foo.latest_version_before("v2") == Bar
+    assert isinstance(Foo.get_latest_version_instance(), Baz)
+    assert isinstance(Foo.latest_version_before_instance("v2"), Bar)
+    assert isinstance(Foo.get_version_instance("v1"), Bar)
 
 
 def test_create_versioned_calls_with_initial_version():

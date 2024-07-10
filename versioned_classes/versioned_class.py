@@ -34,6 +34,20 @@ class VersionedClass:
             return cls.versions[ordered_versions[ordered_versions.index(version) - 1]]
         return cls.versions[ordered_versions[-1]]
 
+    @classmethod
+    def get_latest_version_instance(cls, *args, **kwargs) -> "VersionedClass":
+        return cls.get_latest_version()(*args, **kwargs)
+
+    @classmethod
+    def latest_version_before_instance(
+        cls, version: str, *args, **kwargs
+    ) -> "VersionedClass":
+        return cls.latest_version_before(version)(*args, **kwargs)
+
+    @classmethod
+    def get_version_instance(cls, version: str, *args, **kwargs) -> "VersionedClass":
+        return cls.get_version(version)(*args, **kwargs)
+
 
 def initial_version(version):
     def decorator(klass):
