@@ -4,7 +4,7 @@ from .versioning_format import SemanticVersioning
 from .versioning_format import VersioningFormat
 from .versioning_format import VPrefixVersioning
 
-__version__ = "1.0.0"
+__version__ = "0.0.1"
 
 
 __all__ = [
