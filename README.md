@@ -29,4 +29,6 @@ class MyAPIV2(MyAPI):
 
 
 MyAPI.get_latest_version()  # MyAPIV2
+
+MyAPI.get_latest_version_instance(...)  # MyAPIV2(...)
 ```
